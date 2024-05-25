@@ -17486,6 +17486,9 @@
 "cFt" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "cFx" = (
@@ -17676,6 +17679,16 @@
 	icon_state = "floor_plate"
 	},
 /area/hallway/primary/port/upper)
+"cHD" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/dark/layenia{
+	dir = 1;
+	icon_state = "darkfull_plate"
+	},
+/area/layenia/cloudlayer)
 "cHH" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/ausbushes/brflowers,
@@ -18842,7 +18855,6 @@
 /area/maintenance/port/aft/upper)
 "cSg" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 8;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -37432,6 +37444,9 @@
 	},
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/plating,
 /area/engine/engineering/reactor_control)
 "fRC" = (
@@ -37495,6 +37510,9 @@
 	},
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/plating,
 /area/engine/engineering/reactor_control)
 "fSu" = (
@@ -41003,6 +41021,13 @@
 	name = "Reactor Control Room APC";
 	pixel_x = 24
 	},
+/obj/machinery/button/door{
+	id = "nuke_reactor_ext_windows";
+	name = "Exterior Viewing Shutters Control";
+	pixel_x = 23;
+	pixel_y = -23;
+	req_access_txt = "10;24"
+	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering/reactor_control)
 "gtv" = (
@@ -41243,7 +41268,6 @@
 "gve" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 8;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -41278,7 +41302,6 @@
 "gvD" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 4;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -45411,6 +45434,9 @@
 /obj/machinery/door/firedoor{
 	dir = 8
 	},
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "hcU" = (
@@ -47378,6 +47404,9 @@
 /obj/machinery/door/firedoor{
 	dir = 8
 	},
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "hqQ" = (
@@ -47653,7 +47682,6 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	dir = 8;
-	id_tag = null;
 	name = "Brig";
 	req_access_txt = "63"
 	},
@@ -52590,6 +52618,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/upper)
+"icj" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/layenia{
+	icon_state = "darkfull_whole_alt"
+	},
+/area/layenia/cloudlayer)
 "ico" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4;
@@ -53498,6 +53534,9 @@
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/radiation{
+	id = "nuke_reactor_ext_windows"
+	},
 /turf/open/floor/engine,
 /area/engine/engineering/reactor_core)
 "ikZ" = (
@@ -53505,10 +53544,15 @@
 /area/ai_monitored/storage/satellite)
 "ila" = (
 /obj/machinery/door/airlock/external{
-	name = ""MiniSat Catwalk Access"";
+	name = "Catwalk Access";
 	req_access_txt = "65"
 	},
-/turf/open/floor/plating/layenia,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
 /area/ai_monitored/storage/satellite)
 "ilq" = (
 /obj/structure/table/wood,
@@ -54674,7 +54718,7 @@
 	},
 /area/medical/psych/lobby)
 "itf" = (
-/turf/open/floor/plating/layenia,
+/turf/open/floor/plating,
 /area/ai_monitored/storage/satellite)
 "itl" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -55845,7 +55889,8 @@
 /obj/machinery/light{
 	pixel_y = -1
 	},
-/turf/open/floor/plating/layenia,
+/obj/structure/closet/emcloset,
+/turf/open/floor/plating,
 /area/ai_monitored/storage/satellite)
 "iBi" = (
 /obj/effect/turf_decal/tile/blue{
@@ -68429,7 +68474,6 @@
 "ktu" = (
 /obj/machinery/door/airlock{
 	dir = 8;
-	id_tag = null;
 	name = "Unit X"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -72546,6 +72590,9 @@
 "kZL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark/layenia{
 	icon_state = "darkfull_plate"
@@ -79428,7 +79475,6 @@
 /area/crew_quarters/bar)
 "meM" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 4;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -84049,7 +84095,6 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	dir = 8;
-	id_tag = null;
 	name = "Brig";
 	req_access_txt = "63"
 	},
@@ -94414,6 +94459,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/storage)
+"olb" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/layenia,
+/area/layenia/cloudlayer)
 "olc" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -99019,7 +99070,6 @@
 /area/crew_quarters/fitness/pool)
 "oOt" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 1;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -101026,7 +101076,11 @@
 	dir = 1;
 	pixel_y = 16
 	},
-/turf/open/floor/plating/layenia,
+/obj/item/chair{
+	dir = 1
+	},
+/obj/item/restraints/handcuffs/cable/zipties/used,
+/turf/open/floor/plating,
 /area/ai_monitored/storage/satellite)
 "pal" = (
 /obj/effect/turf_decal/delivery,
@@ -102737,7 +102791,7 @@
 /obj/item/pen,
 /obj/machinery/door/poddoor/shutters/preopen/alt{
 	dir = 8;
-	id = "robotics2" ;
+	id = "robotics2";
 	name = "robotics lab shutters"
 	},
 /turf/open/floor/plating,
@@ -109763,6 +109817,15 @@
 	name = "tile"
 	},
 /area/hallway/primary/aft)
+"qmW" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/layenia{
+	icon_state = "darkfull_plate"
+	},
+/area/layenia/cloudlayer)
 "qmX" = (
 /obj/machinery/light{
 	dir = 8;
@@ -109882,7 +109945,7 @@
 	},
 /obj/item/pen,
 /obj/machinery/door/poddoor/shutters/preopen/alt{
-	id = "robotics" ;
+	id = "robotics";
 	name = "robotics lab shutters"
 	},
 /obj/machinery/door/firedoor,
@@ -111333,7 +111396,6 @@
 /area/hallway/primary/aft)
 "qxw" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 1;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -115899,7 +115961,6 @@
 /area/layenia)
 "rbN" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	dir = 4;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
@@ -132880,7 +132941,6 @@
 /area/hallway/secondary/exit/upper)
 "trj" = (
 /obj/effect/turf_decal/loading_area{
-	color = null;
 	icon_state = "half_stairs_wood";
 	name = "wood steps"
 	},
@@ -157197,6 +157257,19 @@
 	name = "parquet"
 	},
 /area/crew_quarters/lounge)
+"wGx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plasteel/dark/layenia{
+	dir = 1;
+	icon_state = "darkfull_plate"
+	},
+/area/layenia/cloudlayer)
 "wGE" = (
 /obj/machinery/light{
 	pixel_y = -1
@@ -162803,6 +162876,15 @@
 	icon_state = "plaswhite_trim"
 	},
 /area/medical/medbay/upper)
+"xxD" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/layenia{
+	icon_state = "darkfull_plate"
+	},
+/area/layenia/cloudlayer)
 "xxO" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -166964,6 +167046,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+"ycx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/layenia{
+	dir = 8;
+	icon_state = "darkfull_plate"
+	},
+/area/layenia/cloudlayer)
 "ycC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	name = "scrubbers pipe"
@@ -283943,9 +284037,9 @@ ePF
 ePF
 ePF
 ePF
-xxP
-bbt
-bbt
+wGx
+ycx
+ycx
 kZL
 ePF
 ePF
@@ -284200,10 +284294,10 @@ ePF
 ePF
 ePF
 ePF
-tfs
-lMY
-xAr
-lxX
+cHD
+xCw
+xCw
+qmW
 ePF
 ePF
 ePF
@@ -284457,10 +284551,10 @@ ePF
 ePF
 ePF
 ePF
-tfs
-xAr
-xAr
-lxX
+cHD
+xCw
+xCw
+qmW
 ePF
 ePF
 ePF
@@ -284714,10 +284808,10 @@ ePF
 ePF
 ePF
 ePF
-tfs
-xAr
-cda
-lxX
+xxP
+olb
+icj
+xxD
 ePF
 ePF
 ePF
