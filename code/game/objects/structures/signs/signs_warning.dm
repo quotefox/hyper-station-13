@@ -73,3 +73,44 @@
 	name = "\improper ENGINEERING SAFETY"
 	desc = "A sign detailing the various safety protocols when working on-site to ensure a safe shift."
 	icon_state = "safety"
+
+/obj/structure/sign/warning/gasmask
+	name = "\improper PPE AREA"
+	desc = "A warning stating that, beyond this point, a closed oxygen circuit is required. Be aware, be safe."
+	icon_state = "gasmask"
+
+/obj/structure/sign/warning/cold
+	name = "\improper AMBIENT TEMPERATURE WARNING: FROST"
+	desc = "A sign warning of an incredibly cold area ahead."
+	icon_state = "cold"
+
+/obj/structure/sign/warning/heat
+	name = "\improper AMBIENT TEMPERATURE WARNING: FIRE"
+	desc = "A sign warning of an incredibly warm area ahead."
+	icon_state = "heat"
+
+/obj/structure/sign/warning/nanites
+	name = "\improper NANITE LAB"
+	desc = "A sign designating this specific area as a nanite laboratory."
+	icon_state = "nanites"
+
+/obj/structure/sign/warning/explosives
+	name = "\improper DANGER: EXPLOSIVES"
+	desc = "A sign noting planned explosions in the area. Probably not a safe location."
+	icon_state = "explosives"
+
+/obj/structure/sign/warning/explosives/alt
+	icon_state = "explosives2"
+
+/obj/structure/sign/warning/testchamber
+	name = "\improper DANGER: ACTIVE TESTING"
+	desc = "A warning informing crew that they're about to enter an active testing environment."
+	icon_state = "testchamber"
+
+/obj/structure/sign/warning/maint
+	name = "\improper DANGER: MAINTENANCE ACCESS"
+	desc = "The tunnels call out for you. Will you respond?"
+	icon_state = "mait1"
+
+/obj/structure/sign/warning/maint/alt
+	icon_state = "mait2"
